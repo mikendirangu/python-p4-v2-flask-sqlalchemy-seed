@@ -19,3 +19,7 @@ with app.app_context():
 
     # Commit the transaction
     db.session.commit()
+
+    # made it simple with add_all() instead of a loop
+    # for pet in pets:
+    #     db.session.add(pet)
